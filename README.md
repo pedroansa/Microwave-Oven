@@ -32,6 +32,7 @@ This programs implements a State Machine with the states needed for implementing
 * Stop: This State serves as a transition for the Idle State. We enter it, if we press the stop button or if the countdown of cooking state ends. We leave the Stop State after a countdown of 2 seconds.
          
 ## Results
+![UI](panel.PNG)
 
 I've used 2 main classes, the [mainwindow class](mainwindow.h) where we implemented all the UI, the buttons and the state machine, and the [panel class](panel.h) where we implemented the screen and how it would show the information. I've also used a function of [transition.h](transition.h) given in class to implement an action in the transition. I've implemented all the parts asked by the assignment and it is working as described above with a simple but not confusing design.
 
