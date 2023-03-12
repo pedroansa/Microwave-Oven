@@ -20,6 +20,8 @@ I've implemented each functionality with a button, used QTDial to create the dia
 
 This programs implements a State Machine with the states needed for implementing the features asked:
 
+![Chart](Statechart.png)
+
 * Idle: Initial state, nothing is happening, the dial is deactivated and the screen shows the clock.
 * Power Selection: Here we can set the percentage of the power using the dial, from 0 to 100%, the screen shows the power. If we click power button again we go to Time Selection state.
 * Mode Selection: Here we can set the mode A, B or C, the dial is used to select the mode. If we click mode button again we go to time Selection state.
@@ -29,6 +31,11 @@ This programs implements a State Machine with the states needed for implementing
 * Default State: This state is the State father of all the states above.
 * Stop: This State serves as a transition for the Idle State. We enter it, if we press the stop button or if the countdown of cooking state ends. We leave the Stop State after a countdown of 2 seconds.
          
-    
+## Results
 
-Here you're able to see how I've implemented all the s
+I've used 2 main classes, the [mainwindow class](mainwindow.h) where we implemented all the UI, the buttons and the state machine, and the [panel class](panel.h) where we implemented the screen and how it would show the information. I've also used a function of [transition.h](transition.h) given in class to implement an action in the transition. I've implemented all the parts asked by the assignment and it is working as described above with a simple but not confusing design.
+
+## Improvements 
+
+I could still improve the project by given some color to the design and separating the State Machine in a different class.
+To improve even futher 
